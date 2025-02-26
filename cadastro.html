@@ -24,15 +24,11 @@
                 <fieldset>
                     <legend class="formulario__legenda">Informações básicas</legend>
                     
-                    
                     <div class="input-container ">
-                        <input name="nome" id="nome" class=" input" type="text" placeholder="Nome" data-tipo="nome" required>
+                        <input name="nome" id="nome" class=" input" type="text" placeholder="Nome" required>
                         <label class="input-label" for="nome">Nome</label>
                         <span class="input-mensagem-erro">Este campo não está válido</span>
                     </div>
-
-
-
 
                     <div class="input-container">
                         <input name="email" id="email" class="input" type="email" placeholder="Email" data-tipo="email" required>
@@ -82,6 +78,29 @@
                         <span class="input-mensagem-erro">Este campo não está válido</span>
                     </div>
                 </fieldset>
+
+            </fieldset>
+
+            <legend class = "formulario__legenda">Contato</legend>
+            <div class="input-container">
+                <input name="telefone" id="telefone" class="input" type="text" placeholder="Telefone (DDD + Número)" required pattern="^\(?\d{2}\)?\s?\d{5}-?\d{4}$">
+                <label class="input-label" for="telefone">Telefone</label>
+                <span class="input-mensagem-erro">Este campo não está válido </span>
+            </div>
+
+        </fieldset>
+
+        </fieldset>
+
+            <legend class = "formulario__legenda">Redes Sociais</legend>
+            <div class="input-container">
+                <input name="instagram" id="instagram" class="input" type="text" placeholder="Instagram (@Usuario)" required pattern="^@([A-Za-z0-9_]{1, 15})$">
+                <label class="input-label" for="instagram">Instagram</label>
+                <span class="input-mensagem-erro">Este campo não está válido </span>
+            </div>
+
+        </fieldset>
+
                 <button class="botao">Cadastrar</button>
             </form>
         </section>
